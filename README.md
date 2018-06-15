@@ -9,13 +9,24 @@ Sleep with Promise
 
     npm install sleep-es6 --save
 
+    or
+
+    yarn add sleep-es6
+
 # Usage
 
+```typescript
+import { sleep } from "sleep-es6";
 
+sleep(1000).then(()=>console.log("after 1000ms"));
+
+```
 
 # API
 
-
+```typescript
+function sleep(timeout: number): Promise<void>;
+```
 
 # Test
 
